@@ -1,0 +1,147 @@
+.services__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 3rem 4rem;
+    gap: 3rem;
+}
+
+.text__services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.text__services h1 {
+    font-size: 32px;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+}
+
+.text__services p {
+    width: 50%;
+    text-align: center;
+    color: #707070;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.services__area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.img-service {
+    display: flex;
+    justify-content: start;
+}
+
+.img-service2 {
+    display: flex;
+    justify-content: end;
+}
+
+.services img {
+    width: 75%;
+}
+
+.services .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.services .texts h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.services .texts p {
+    line-height: 1.5rem;
+    width: 90%;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .services img{
+        width: 95%;
+    }
+
+    .services .texts h1{
+        font-size: 26px;
+        font-weight: 600;
+        width: 110%;
+    }
+
+    .services .texts p {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .services__container {
+        padding: 1.5rem 1rem;
+    }
+
+    .text__services{
+        text-align: center;
+    }
+
+    .text__services h1{
+        width: 100%;
+    }
+
+    .text__services p{
+        width: 100%;
+    }
+
+    .services__area {
+        gap: 3rem;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-mobile {
+        flex-direction: column-reverse;
+    }
+
+    .img-service, .img-service2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .services .texts{
+        text-align:center;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .services .texts h1{
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .services .texts p{
+        width: 100%;
+    }
+}

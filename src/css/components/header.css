@@ -1,0 +1,89 @@
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1.5rem 4rem;
+}
+
+.principal__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    gap: 1.5rem;
+}
+
+.principal__text h1 {
+    color: #242424;
+    font-size: 68px;
+    font-weight: 600;
+    line-height: 4.5rem;
+}
+
+.principal__text p {
+    font-size: 16px;
+    font-weight: 100;
+    color: #757575;
+    width: 80%;
+    line-height: 1.5rem;
+}
+
+.button__cta2 {
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    background-color: #9bcee7;
+    cursor: pointer;
+    color: #393939;
+    font-size: 16px;
+    font-weight: 600;
+    width: 20%;
+}
+
+.button__cta2:hover {
+    background-color: rgb(220, 204, 100);
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .header__container .principal__text{
+        width: 85%;
+    }
+
+    .button__cta2{
+        padding: 1rem 8px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .header__container{
+        padding: 1rem 1rem;
+    }
+
+    .principal__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .principal__text h1 {
+        font-size: 40px;
+        line-height: 2.5rem;
+    }
+
+    .principal__text p{
+        width: 100%;
+    }
+    
+    .cta{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button__cta2 {
+        width: 100%;
+        font-size: 22px;
+    }
+}

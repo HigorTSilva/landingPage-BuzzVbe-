@@ -1,0 +1,154 @@
+#contact {
+    background-image: url("https://r2.easyimg.io/d7h9o1rf2/design_sem_nome_(5).png");
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 1rem 0;
+    margin-bottom: 10rem;
+}
+
+.contact__container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    gap: 2rem;
+}
+
+.left__side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    gap: 1rem;
+}
+
+.left__side h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #9bcee7;
+}
+
+.left__side p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form .form__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.form__content .input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(175, 175, 175, 0.2);
+    border: 1px solid rgb(220, 204, 100);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    gap: 8px;
+    color: #f5f5f5;
+}
+
+.form__content .input-field .fa-width{
+    font-size: 18px;
+    color: #f5f5f5;
+}
+
+.form__content .input-field input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    font-size: 18px;
+    color: #f5f5f5;
+}
+
+.form__content .input-field input::placeholder{
+    color: #f5f5f5;
+}
+
+.form__content .text-area {
+    resize: none;
+    border: 1px solid rgb(220, 204, 100);
+    border-radius: 12px;
+    outline: none;
+    background-color: rgba(175, 175, 175, 0.2);
+    padding: 8px 1rem;
+    font-size: 18px;
+    color: #f5f5f5;
+}
+
+.form__content .text-area::placeholder{
+    color: #f5f5f5;
+}
+
+.form__content a {
+    margin-top: 2rem;
+    width: 45%;
+}
+
+.form__content .input-button {
+    width: 100%;
+    background-color: #9bcee7;
+    border-radius: 8px;
+    padding: 5%;
+    font-size: 18px;
+    color: #393939;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.form__content .input-button:hover{
+    background-color: rgb(220, 204, 100);
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .form__content a {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #contact{
+        padding: 0;
+    }
+
+    .contact__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+    }
+
+    .left__side {
+        width: 90%;
+    }
+
+    .form__content .input-field input {
+        font-size: 22px;
+    }
+
+    .form__content a {
+        width: 60%;
+    }
+}

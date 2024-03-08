@@ -1,0 +1,10 @@
+@import "./reset.css";
+@import "./variables.css";
+@import "./globals.css";
+
+@import "./components/navbar.css";
+@import "./components/header.css";
+@import "./components/services.css";
+@import "./components/clients.css";
+@import "./components/contact.css";
+@import "./components/footer.css";

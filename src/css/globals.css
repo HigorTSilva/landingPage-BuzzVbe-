@@ -1,0 +1,14 @@
+body {
+    font-family: var(--font-family);
+    margin-top: 10rem;
+    color: #242424;
+}
+
+body p{
+    color: #757575;
+}
+
+.max-width {
+    width: 100%;
+    margin-bottom: 15rem;
+}
