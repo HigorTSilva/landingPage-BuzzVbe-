@@ -1,13 +1,16 @@
 const navbar = document.querySelector(".navbar");
-const button = document.querySelector(".burguer");
-const mobileNavbar = document.querySelector(".navbar__mobile");
-
-button.addEventListener("click", function() {
-    mobileNavbar.classList.toggle("active");
-})
-
+const navMobile = document.querySelector("#nav__mobile");
+const closeNavMobile = document.querySelector("#nav__mobile");
 
 window.addEventListener('scroll', function () {
     if (this.window.scrollY > 0) return navbar.classList.add('active');
     return navbar.classList.remove('active');
 });
+
+function openNav() {
+    navMobile.style.width = "100%";
+}
+
+function closeNav() {
+    closeNavMobile.style.width = "0";
+}
