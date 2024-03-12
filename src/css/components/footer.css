@@ -75,14 +75,17 @@
     flex-direction: row;
     gap: 8px;
     text-decoration: none;
-    color: rgb(220, 204, 100);
+    background-color: rgb(220, 204, 100);
+    color: rgb(0,0,0);
     font-size: 16px;
     line-height: 15px;
+    padding: 8px;
+    border-radius: 8px;
     font-weight: 600;
 }
 
 .footer__main-content .contact-link a:hover{
-    color: #9bcee7;
+    background-color: #9bcee7;
     transition: .3s;
 }
 
