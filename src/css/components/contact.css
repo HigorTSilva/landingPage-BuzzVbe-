@@ -1,8 +1,7 @@
 #contact {
-    background-image: url("https://r2.easyimg.io/d7h9o1rf2/design_sem_nome_(5).png");
+    background-image: url("https://r2.easyimg.io/5lfda1fna/bg-contacts.webp");
     background-repeat: no-repeat;
     height: 100%;
-    padding: 1rem 0;
     margin-bottom: 10rem;
 }
 
@@ -129,15 +128,11 @@
 }
 
 @media screen and (max-width:767px) {
-    #contact{
-        padding: 0;
-    }
-
     .contact__container{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
     }
 
     .left__side {
@@ -150,5 +145,11 @@
 
     .form__content a {
         width: 60%;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .form__content a {
+        width: 75%;
     }
 }
