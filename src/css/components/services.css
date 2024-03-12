@@ -54,10 +54,6 @@
     justify-content: end;
 }
 
-.services img {
-    width: 75%;
-}
-
 .services .texts {
     display: flex;
     flex-direction: column;
