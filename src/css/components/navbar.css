@@ -163,17 +163,24 @@
         justify-content: space-between;
         position: relative;
         width: 100%;
+        gap: 1.25rem;
+    }
+
+    .overlay__content .links-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         gap: 1rem;
     }
 
-    .overlay__content a {
+    .overlay__content .links-mobile a {
         text-decoration: none;
         color: #242424;
         font-size: 1.25rem;
         transition: 0.3s;
     }
 
-    .overlay__content a:hover{
+    .overlay__content .links-mobile a:hover{
         color: rgba(220, 204, 100, .9);
         transition: 0.3s;
     }
